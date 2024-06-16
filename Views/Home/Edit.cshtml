@@ -1,0 +1,23 @@
+﻿@model MyStudentsmanager.Models.User
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <!-- Другие поля формы для редактирования пользователя -->
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" />
+    </div>
+
+    <div>
+        <label asp-for="Parol"></label>
+        <input asp-for="Parol" />
+    </div>
+
+    <button type="submit">Сохранить</button>
+</form>
